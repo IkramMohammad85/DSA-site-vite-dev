@@ -3,20 +3,17 @@ import legacy from '@vitejs/plugin-legacy';
 import postcssPresetEnv from 'postcss-preset-env';
 import cssnano from 'cssnano';
 
-
 export default defineConfig({
-  
   plugins: [
     legacy({
       targets: ['defaults', 'not IE 11'],
     }),
-
   ],
   css: {
     postcss: {
       plugins: [
         postcssPresetEnv(),
-        cssnano(), // Minifies CSS properly via PostCSS
+        cssnano(), // Ensures CSS is minified
       ],
     },
     preprocessorOptions: {
@@ -36,4 +33,10 @@ export default defineConfig({
       },
     },
   },
+  assetsInclude: ['**/*.css'],
+  resolve: {
+    alias: {
+      '/@fs/': '/',
+    },
+  }, 
 });
