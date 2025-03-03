@@ -5,6 +5,7 @@ import cssnano from 'cssnano';
 
 
 export default defineConfig({
+  
   plugins: [
     legacy({
       targets: ['defaults', 'not IE 11'],
