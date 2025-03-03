@@ -2,21 +2,14 @@ import { defineConfig } from 'vite';
 import legacy from '@vitejs/plugin-legacy';
 import postcssPresetEnv from 'postcss-preset-env';
 import cssnano from 'cssnano';
-import { viteStaticCopy } from 'vite-plugin-static-copy';
+
 
 export default defineConfig({
   plugins: [
     legacy({
       targets: ['defaults', 'not IE 11'],
     }),
-    viteStaticCopy({
-      targets: [
-        {
-          src: 'src/**/*', // Copy everything from src/
-          dest: '' // Keep the same structure in dist/
-        }
-      ]
-    })
+
   ],
   css: {
     postcss: {
