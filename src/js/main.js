@@ -1,5 +1,3 @@
-
-document.getElementById("app").innerHTML += "<p>JavaScript is running!</p>";
 import "../scss/main.scss"; // Import SCSS to trigger compilation
 
 // Import other JS files
