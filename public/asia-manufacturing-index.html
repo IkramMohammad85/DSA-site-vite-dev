@@ -1563,19 +1563,7 @@
         </div>
       </section>
       <div id="footer-placeholder"></div>
-      <script>
-        async function loadHTML(id, file) {
-            const response = await fetch(file);
-            if (response.ok) {
-                document.getElementById(id).innerHTML = await response.text();
-            } else {
-                console.error(`Error loading ${file}`);
-            }
-        }
-
-        loadHTML("header", "includes/header.html");
-        loadHTML("footer", "includes/footer.html");
-    </script>
+      
     <script type="module" src="/src/js/main.js"></script>
     <script type="module" src="/src/js/load-include.js"></script>
 </body>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dezan Shira &amp; Associates - Homepage</title>
+    <link rel="stylesheet" crossorigin href="/assets/index-BggWH1oj.css">
 </head>
 
 <body>
@@ -1550,19 +1551,7 @@
         </div>
       </section>
       <div id="footer-placeholder"></div>
-      <script>
-        async function loadHTML(id, file) {
-            const response = await fetch(file);
-            if (response.ok) {
-                document.getElementById(id).innerHTML = await response.text();
-            } else {
-                console.error(`Error loading ${file}`);
-            }
-        }
-
-        loadHTML("header", "includes/header.html");
-        loadHTML("footer", "includes/footer.html");
-    </script>
+      
     <script type="module" src="/src/js/main.js"></script>
     <script type="module" src="/src/js/load-include.js"></script>
 </body>
