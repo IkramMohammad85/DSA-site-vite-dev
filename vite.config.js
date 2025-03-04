@@ -33,7 +33,7 @@ export default defineConfig({
       },
     },
   },
-  assetsInclude: ['**/*.css'],
+  //assetsInclude: ['**/*.css'],
   resolve: {
     alias: {
       '/@fs/': '/',
